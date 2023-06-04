@@ -101,7 +101,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <Router>
+      <Router basename='/expense-tracker'>
         <h1>Expense Tracker</h1>
         <Header
           handleConfirmDialog={handleConfirmDialog}
