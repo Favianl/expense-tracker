@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import Modal from './components/Modal';
@@ -101,7 +101,6 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      {/* <Router basename='/expense-tracker'> */}
       <Router>
         <h1>Expense Tracker</h1>
         <Header
