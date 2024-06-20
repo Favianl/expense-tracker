@@ -12,7 +12,7 @@ import Header from './components/Header';
 const initialData =
   JSON.parse(localStorage.getItem('dataExpenseTracker')) || [];
 
-const initialTheme = JSON.parse(localStorage.getItem('theme')) || 'light';
+const initialTheme = JSON.parse(localStorage.getItem('themeET')) || 'light';
 
 const categories = {
   income: [
@@ -46,10 +46,10 @@ function App() {
   const handleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
-      localStorage.setItem('theme', JSON.stringify('dark'));
+      localStorage.setItem('themeET', JSON.stringify('dark'));
     } else {
       setTheme('light');
-      localStorage.setItem('theme', JSON.stringify('light'));
+      localStorage.setItem('themeET', JSON.stringify('light'));
     }
   };
 
